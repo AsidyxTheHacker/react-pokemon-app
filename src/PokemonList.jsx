@@ -4,10 +4,10 @@ function PokemonList({ pokemon }) {
 
     return(
     <>
-    <div>
+    <div className="pokemon-container">
     {pokemon.map(p => (
-        <div key={p}>{p}</div>
-    ))}
+        <p key={p} className="pokemon-text">{p}</p>
+        ))}
     </div>
     </>
     )
